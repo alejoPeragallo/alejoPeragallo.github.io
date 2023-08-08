@@ -1,0 +1,569 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Oxanium", cursive;
+  box-sizing: border-box;
+}
+
+.vinculos {
+  text-align: center;
+}
+.vinculos a {
+  color: black;
+  font-weight: bold;
+  margin-right: 7.5px;
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.subtitulo {
+  border-bottom: black 1.5px solid;
+}
+
+.subtituloIzq {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+h3.subtitulo {
+  margin-left: 10px;
+}
+
+.imagenPrincipal {
+  height: 500px;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.imagenGrande {
+  height: 500px;
+  width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 10px;
+  margin-bottom: 0px;
+  border-radius: 20px;
+}
+.imagenGrande:hover {
+  border: black solid 2px;
+  height: 550px;
+  width: 850px;
+}
+
+.imagenGrandeEstatica {
+  height: 500px;
+  width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 10px;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  border: 2px black solid;
+}
+
+.imagenMediana, .imagenMedianaB {
+  height: 300px;
+  width: 410px;
+  margin-left: 10px;
+  margin-top: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imagenMediana:hover {
+  height: 350px;
+  width: 350px;
+}
+
+.imagenMedianaEstatica, .imagenMedianaEstaticaB {
+  height: 300px;
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imagenMedianaCarousel {
+  height: 500px;
+  width: 300px;
+  margin-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.imagenChica {
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.caja {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 550px;
+  margin-left: 10px;
+}
+
+.imagenMedianaRedondeada {
+  height: 300px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 35px;
+  margin-left: 10px;
+}
+
+.boton {
+  height: 80px;
+  width: 150px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.botonComprar {
+  margin-left: 10px;
+  background-color: antiquewhite;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.pieDePag {
+  background-color: rgb(218, 218, 218);
+  text-align: center;
+}
+.pieDePag a {
+  color: black;
+  font-weight: bold;
+}
+
+.mapa {
+  border: solid black 10px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  height: 300px;
+  width: 100%;
+}
+
+.problema {
+  margin-top: 20px;
+}
+
+.ayuda {
+  margin: 10px;
+  margin-left: 38%;
+  background: rgb(218, 218, 218);
+  width: 320px;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.ayuda input {
+  width: 100%;
+  background: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.textArea {
+  width: 100%;
+  background: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 15%);
+  grid-template-rows: repeat(3, 30%);
+  grid-template-areas: "img1 img4 img4" "img1 img3 img5" "img2 img2 img5";
+  gap: 10px;
+  margin-left: 10px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.img1 {
+  grid-area: img1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img2 {
+  grid-area: img2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img3 {
+  grid-area: img3;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img4 {
+  grid-area: img4;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img5 {
+  grid-area: img5;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenedorFlex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.contenedorFlexTexto {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contenedorFlexTexto p.caja {
+  margin-left: 60px;
+}
+.contenedorFlexTexto p.caja button.botonComprar {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centro {
+  display: flex;
+  align-items: center;
+}
+.centro p {
+  text-align: center;
+}
+.centro .botonComprar {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor p.caja {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-left: 80px;
+}
+.contenedor .botonComprar {
+  display: block;
+  margin-top: 10px;
+  margin-left: 280px;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.botinesMujer {
+  display: flex;
+  justify-content: center;
+}
+
+.agrandar:hover {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+}
+
+.video {
+  width: auto;
+  height: auto;
+}
+
+.tenis {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 40%;
+  margin-left: 60%;
+  margin-bottom: 5px;
+  border: solid 2px black;
+}
+.tenis p {
+  margin-top: 15%;
+}
+.tenis img {
+  border-radius: 15px;
+  margin-left: 2px;
+  margin-bottom: 3px;
+}
+
+@media (max-width: 1024px) {
+  .imagenGrande {
+    height: 400px;
+    width: 680px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .imagenGrandeEstatica {
+    height: 460px;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .imagenMedianaRedondeada {
+    width: 300px;
+    height: 360px;
+  }
+  .caja {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .pieDePag {
+    width: 1024px;
+    height: 200px;
+  }
+  .mapa {
+    width: 1024px;
+    height: auto;
+  }
+  .imagenMedianaB, .imagenMedianaEstaticaB {
+    width: 460px;
+  }
+  .ayuda {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mujertexto {
+    margin: auto;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+  }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .contenedor p.caja {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .botonComprar {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contenedor .botonComprar {
+    margin-right: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .imagenGrande, .imagenGrandeEstatica {
+    height: 360px;
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .caja {
+    width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .pieDePag {
+    width: 860px;
+    height: 200px;
+  }
+  .mapa {
+    width: 860px;
+    height: auto;
+  }
+  .imagenMedianaB, .imagenMedianaEstaticaB {
+    width: 400px;
+  }
+  .ayuda {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mujertexto {
+    margin: auto;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+  }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .contenedor p.caja {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .botonComprar {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 480px) {
+  .imagenGrande {
+    height: 350px;
+    width: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .imagenGrandeEstatica {
+    height: auto;
+    width: 300;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .caja {
+    width: 460px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pieDePag {
+    width: 480px;
+    height: 200px;
+  }
+  .mapa {
+    width: 480px;
+    height: auto;
+  }
+  .imagenMedianaB, .imagenMedianaEstaticaB {
+    width: 200px;
+  }
+  .ayuda {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mujertexto {
+    margin: 0px;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+  }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .contenedor p.caja, .contenedor .botonComprar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .botonComprar {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+  }
+  .imagenMedianaRedondeada {
+    height: 140px;
+    width: 200px;
+  }
+  .contenedorFlexTexto p.caja {
+    margin-left: auto;
+    margin-right: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 320px) {
+  .imagenGrande {
+    height: 400px;
+    width: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .imagenGrandeEstatica {
+    height: auto;
+    width: 300;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .caja {
+    width: 300px;
+    margin-right: auto;
+  }
+  .pieDePag {
+    width: 320px;
+    height: 200px;
+  }
+  .mapa {
+    width: 320px;
+    height: auto;
+  }
+  .imagenMedianaB, .imagenMedianaEstaticaB {
+    width: 140px;
+  }
+  .ayuda {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .mujertexto {
+    margin: 0px;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+  }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .contenedor p.caja {
+    margin-left: 0px;
+  }
+  .contenedor .botonComprar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .botonComprar {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+  }
+  .imagenMedianaRedondeada {
+    height: 140px;
+    width: 200px;
+  }
+  .contenedorFlexTexto p.caja {
+    margin-left: auto;
+    margin-right: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .imagenMedianaRedondeada {
+    height: 100auto;
+    width: 120px;
+  }
+}/*# sourceMappingURL=Style.css.map */
