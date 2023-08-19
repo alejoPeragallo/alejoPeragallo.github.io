@@ -369,7 +369,8 @@ h3.subtitulo {
         margin-left: 26%;
     }
     form.ayuda{
-        margin-left: 10%;
+        margin-left: auto;
+        margin-right: auto;
     }
     img.imagenGrandeEstatica.aos-init.aos-animate{
         width: 350px;
@@ -390,11 +391,105 @@ h3.subtitulo {
         margin-left: auto;
     }
     section.ContenedorBorde{
-        margin-left: 12%;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 10px;
         display: flex;
         flex-direction: column;
         height: 500px;
         object-fit: cover;
+        max-width: 300px;
+    }
+    .textoResponsive{
+        font-size: 10px;
+        max-width: 100%;
+    }
+}
+@media(max-width:768px){
+    p.caja{
+        width: 700px;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+}
+    img.imagenGrande{
+        width: 500px;
+        height: 350px;
+        margin-left: 15%;
+}
+    .contenedor3img{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+}
+    h3.subtituloIzq{
+        text-align: center;
+}
+    .videoPerso{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 550px;
+        height: 250px;
+        margin-bottom: 5px;
+}
+    img.imagenGrandeEstatica.aos-init.aos-animate{
+        width: 230px;
+        height: 230px;
+        margin-left: auto;
+        margin-right: auto;
+}
+    img.imagenMediana.imagenMedianaRedondeada.agrandar{
+        height: 230px;
+        width: 230px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    p.caja.mujertexto{
+        width: 700px;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+    }
+    .contenedor3img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section.ContenedorBorde{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        object-fit: cover;
+        max-width: 300px;
+    }
+    div.botonCentro{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .contenedorFlexTexto{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    img.imagenMedianaEstatica.sombra{
+        margin-left: 33%;
+        margin-bottom: 5px;
+    }
+    form.ayuda{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .textoResponsive{
+        font-size: 12px;
+        max-width: 100%;
+    }
+    .contenedor .botonComprar{
+        margin: 0px;
     }
 }
