@@ -384,6 +384,11 @@ h3.subtitulo {
         width: 800px;
         object-fit: cover;
     }
+    @media(max-width:1024px){
+        img.imagenMedianaEstaticaB, img.imagenMedianaB.imagenMediana{
+            width: 90%;
+        }
+    }
 @media(max-width:768px){
         p.caja{
             width: auto;
