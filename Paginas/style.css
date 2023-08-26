@@ -325,7 +325,7 @@ h3.subtitulo {
     margin-left: 25px;
 }
 
-@media(max-width:1440px){
+@media(max-width:1540px){
     p.caja.textoResponsive{
         width: auto;
         height: auto;
