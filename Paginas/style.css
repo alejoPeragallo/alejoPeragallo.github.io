@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background: url(../Imagenes/fondo.png) no-repeat;
+    background: url(../Imagenes/fondogris.jpg) no-repeat;
+    background-size: cover;
 }
 .vinculos{
     text-align: center;
@@ -28,6 +29,10 @@ body{
 }
 h3.subtitulo {
     margin-left: 10px;
+}
+h3.subtituloIzq{
+    display: flex;
+    justify-content: center;
 }
 .imagenPrincipal{
     height: 500px;
@@ -98,6 +103,12 @@ h3.subtitulo {
     height: fit-content;
     width: 550px;
     margin-left: 10px;
+}
+.caja2{
+    height: fit-content;
+    width: 550px;
+    margin-left: 10px;
+    text-align: center;
 }
 .imagenMedianaRedondeada{
     height: 300px;
@@ -309,7 +320,7 @@ h3.subtitulo {
     background-image: url(../Imagenes/Williams.jpg);
 }
 .Frente2{
-    background-image: url(../Imagenes/Messi.jpg);
+    background-image: url(../Imagenes/Banini.jpg);
 }
 .Detras{
     background-color: gray;
@@ -324,6 +335,67 @@ h3.subtitulo {
     height: 300px;
     margin-left: 25px;
 }
+.zoom, .zoom1, .zoom2, .zoom3, .zoom4, .zoom5, .zoom6, .zoom7, .zoom8, .zoom9, .zoom10, .zoom11 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-image: url(../Imagenes/DeportesSlides/Kobe.jpg);
+    transition: transform .2s; /* Animation */
+    width: 35px;
+    height: 300px;
+    margin: 0 5px;
+    border-radius: 10px;
+  }
+  .zoom1{
+    background-image: url(../Imagenes/DeportesSlides/Tatum.jpg);
+  }
+  .zoom2{
+    background-image: url(../Imagenes/DeportesSlides/LebronJ.jpg);
+  }
+  .zoom3{
+    background-image: url(../Imagenes/DeportesSlides/ShaiG.jpg);
+  }
+  .zoom4{
+    background-image: url(../Imagenes/DeportesSlides/JaMorant.jpg);
+  }
+  .zoom5{
+    background-image: url(../Imagenes/DeportesSlides/Ginobili.jpg);
+  }
+  /*Desde la numero 6, las imagenes que aparecen son de futbol*/
+  .zoom6{
+    background-image: url(../Imagenes/DeportesSlides/Messi.jpg);
+  }
+  .zoom7{
+    background-image: url(../Imagenes/DeportesSlides/Maradona.jpg);
+  }
+  .zoom8{
+    background-image: url(../Imagenes/DeportesSlides/Kempes.jpg);
+  }
+  .zoom9{
+    background-image: url(../Imagenes/DeportesSlides/Passarella.jpg);
+  }
+  .zoom10{
+    background-image: url(../Imagenes/DeportesSlides/DiStefano.jpg);
+  }
+  .zoom11{
+    background-image: url(../Imagenes/DeportesSlides/Riquelme.jpg);
+  }
+  .zoom:hover, .zoom1:hover, .zoom2:hover, .zoom3:hover, .zoom4:hover, .zoom5:hover, .zoom6:hover, .zoom7:hover, .zoom8:hover, .zoom9:hover, .zoom10:hover, .zoom11:hover{
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    width: 200px;
+    object-fit: cover;
+  }
+  .contenedorDeCartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contenedorDeCartasFutbol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+  }
 
 @media(max-width:1540px){
     p.caja.textoResponsive{
@@ -386,6 +458,9 @@ h3.subtitulo {
     }
     @media(max-width:1024px){
         img.imagenMedianaEstaticaB, img.imagenMedianaB.imagenMediana{
+            width: 90%;
+        }
+        .caja2{
             width: 90%;
         }
     }
@@ -483,6 +558,12 @@ h3.subtitulo {
         img.imagenMedianaB.imagenMediana{
             width: 200px;
         }
+        .zoom:hover, .zoom1:hover, .zoom2:hover, .zoom3:hover, .zoom4:hover, .zoom5:hover, .zoom6:hover, .zoom7:hover, .zoom8:hover, .zoom9:hover, .zoom10:hover, .zoom11:hover {
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            width: 35px;
+            margin: 3px;
+            object-fit: cover;
+          }
     }
 
     @media(max-width:420px){
@@ -564,4 +645,11 @@ h3.subtitulo {
             font-size: 10px;
             max-width: 100%;
         }
+        .zoom:hover, .zoom1:hover, .zoom2:hover, .zoom3:hover, .zoom4:hover, .zoom5:hover{
+            transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            width: 35px;
+            padding: 3px;
+            flex-direction: column;
+            object-fit: cover;
+          }
     }
